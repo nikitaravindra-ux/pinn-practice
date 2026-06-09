@@ -20,8 +20,8 @@ Where x = prey (rabbits), y = predators (foxes), t = time.
 
 ## Progress
 - [x] Day 2: Classical scipy solver
-- [ ] Day 3: Understanding PINN theory
-- [ ] Day 4: PINN implementation in PyTorch
+- [x] Day 3: Understanding PINN theory
+- [x] Day 4: PINN implementation in PyTorch
 - [ ] Day 5: Comparison plot + final cleanup
 
 ## How to Run
