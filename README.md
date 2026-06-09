@@ -30,4 +30,18 @@ pip install numpy scipy matplotlib torch jupyter
 Then open classical_solver.ipynb in Jupyter notebook.
 
 ## Results
-(comparison plot will be added on Day 5)
+![Comparison Plot](comparison_plot.png)
+
+## notes
+
+- A pure PINN (physics loss only) kept collapsing to zero — because x=0, y=0 
+  trivially satisfies the ODE mathematically. The network found the easy way out.
+
+- Fixed by adding a data loss term alongside the physics loss, forcing the network 
+  to match the classical solution at sampled points.
+
+- This is realistic — real-world PINNs almost always combine physics loss 
+  with some measurement data. That combination is their true strength.
+
+- The Lotka-Volterra system is deceptively hard for PINNs due to its long 
+  oscillatory nature — a known challenge called spectral bias.
